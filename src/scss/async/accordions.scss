@@ -1,0 +1,30 @@
+@import '@scssFolder/vars.scss';
+
+body {
+  background-color: white;
+}
+
+.accordion {
+  margin-bottom: 1rem;
+
+  &__head {
+    background-color: $primaryColor;
+    width: 100%;
+    height: 3rem;
+
+    &::hover {
+      cursor: pointer;
+    }
+  }
+
+  &__dropdown {
+    width: 100%;
+    height: 5rem;
+    background-color: $secondaryColor;
+
+    [data-open="false"] & {
+      display: none;
+    }
+  }
+
+}
