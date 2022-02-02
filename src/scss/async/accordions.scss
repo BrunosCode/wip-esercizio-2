@@ -5,14 +5,14 @@ body {
 }
 
 .accordion {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 
   &__head {
     background-color: $primaryColor;
     width: 100%;
     height: 3rem;
 
-    &::hover {
+    &:hover {
       cursor: pointer;
     }
   }
